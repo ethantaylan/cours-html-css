@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  background-color: rgb(238, 238, 238);
+  padding: 20px;
+  bottom: 0px;
+  width: 100%;
+}
+
+.footer-acceuil {
+    background-color: rgb(238, 238, 238);
+    padding: 20px;
+    bottom: 0px;
+    width: 100%;
+    position: absolute;
+}
+
+p {
+  margin: 0px !important;
+}
+
+.sectionDeuxFooter > .menuFooter {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.mentionsIcones > .iconesReseaux a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.telephoneLien > a {
+    text-decoration: none !important;
+}
+
+.mentions > a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.menuFooter a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.sectionUnFooter {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.sectionDeuxFooter {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.logoFooter img {
+  width: 180px;
+}
+
+.telephoneLien a {
+  text-align: center;
+  color: white;
+  background-color: #439f35;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.telephoneFooter a:hover {
+  background-color: black;
+}
+
+.mentions {
+  display: flex;
+  font-size: 14px;
+}
+
+.mentions p {
+  padding: 0 15px;
+  /* border-left: #000 solid 1px; */
+}
+
+p.sansBorder {
+  padding-left: 0;
+  /* border-left: none;    */
+}
+
+.bordureFooter {
+  width: 1px;
+  background-color: #000;
+}
+
+.mentions p:hover {
+  color: #439f35;
+}
+
+.iconesReseaux {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 8px;
+}
+
+.iconesReseaux a {
+  padding-left: 8px;
+}
+
+.iconesReseaux i {
+  font-size: 30px;
+}
+
+.iconesReseaux i:hover {
+  color: #439f35;
+}
+
+.facebookLogo {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.sectionDeuxFooter h3 {
+  margin-bottom: 15px;
+}
+
+.menuFooter p:hover {
+  color: #439f35;
+}
+
+.nomEtMail input {
+  background-color: white;
+  border-radius: 30px;
+  text-align: center;
+  border: white 1px solid;
+  padding: 10px 25px;
+  font-size: 16px;
+}
+
+.nomEtMail input:first-child {
+  margin-right: 8px;
+}
+
+.nomEtMail input:active {
+  outline: 1px black solid;
+  background-color: white;
+}
+
+.nomEtMail input:focus {
+  outline: 1px black solid;
+  background-color: white;
+}
+
+.inscrire input {
+  color: black;
+  font-size: 16px;
+  background-color: white;
+  border: black 1px solid;
+  padding: 10px 25px;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+.inscrire input:hover {
+  background-color: rgb(236, 236, 236);
+  border: black 1px solid;
+}
+
+@media (max-width: 1000px) {
+  .sectionUnFooter {
+    align-items: center;
+  }
+  .sectionDeuxFooter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menuFooter,
+  .contact,
+  .mentionsIcones,
+  .newsletterFooter {
+    margin-top: 20px;
+  }
+
+  .iconesReseaux {
+    margin-bottom: 20px;
+  }
+
+  .iconesReseaux a:first-child {
+    padding-left: 0;
+  }
+
+  .sectionUnFooter,
+  .sectionDeuxFooter {
+    padding: 0;
+  }
+
+  .nomEtMail {
+    display: flex;
+    flex-direction: column;
+    max-width: 270px;
+  }
+
+  .nomEtMail input:first-child {
+    margin-bottom: 8px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .sectionUnFooter {
+    align-items: center;
+  }
+  .logoFooter img {
+    width: 155px;
+  }
+}

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/media-screen.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/footer.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <title>Ifocop DIV G22 | Portfolios</title>
+  </head>
+
+  <body id="body">
+    <div id="left-menu" class="left-menu">
+      <i onclick="crossClick()" id="cross" class="fa-solid fa-caret-left cross"></i>
+
+      <ul id="left-menu-ul" class="navbar-nav nav">
+        <li id="EthanLeftMenu" onclick="EthanActive()" class="nav-item ff-pro text-white"><a href="#ethan" class="nav-link">ETHAN</a></li>
+        <li id="JeremyLeftMenu" onclick="JeremyActive()" class="nav-item ff-pro text-white"><a href="#jeremy" class="nav-link">JEREMY</a></li>
+        <li id="AwaLeftMenu" onclick="AwaActive()" class="nav-item ff-pro text-white"><a href="#awa" class="nav-link">AWA</a></li>
+        <li id="EmmanuelLeftMenu" onclick="EmmanuelActive()" class="nav-item ff-pro text-white"><a href="#emmanuel" class="nav-link">EMMANUEL</a></li>
+        <li id="SofyaneLeftMenu"  onclick="SofyaneActive()" class="nav-item ff-pro text-white"><a href="#sofyane" class="nav-link">SOFYANE</a></li>
+      </ul>
+    </div>
+    <div class="border-bottom container-fluid dark-green-color font-weight-600">
+      <div class="container">
+        <nav class="p-0 navbar navbar-expand-lg">
+          <div class="d-flex flex-row align-items-center">
+            <a class="navbar-brand m-0 pb-2 pt-2 text-white" href="#"
+              ><img src="/assets/logo-ifocop.svg" alt="Logo Ifocop"
+            /></a>
+            <div class="navbar-line"></div>
+            <h6 class="important-green m-0 justify-content-md-start">
+              PROMOTION 22
+            </h6>
+          </div>
+
+          <button
+            class="navbar-toggler important-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+          <div
+            class="collapse justify-content-end navbar-collapse"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item" onclick="activeAccueil()" id="AccueilBtn">
+                <a class="nav-link text-white important-hover p-4" href="index.html"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item"  onclick="activePortfolios()" id="PortfoliosBtn">
+                <a
+                  class="nav-link text-white important-hover p-4"
+                  href="#"
+                  >Portfolios</a
+                >
+              </li>
+              <li class="nav-item" onclick="activeFormations()" id="FormationsBtn">
+                <a class="nav-link text-white important-hover p-4" href="#"
+                  >Formations</a
+                >
+              </li>
+              <li class="nav-item" onclick="activeContactezNous()" id="ContactezNousBtn">
+                <a class="nav-link text-white important-hover p-4" href="/contact.html"
+                  >Contactez-nous</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="banner flex-row justify-content-center">
+      <i class="fa-solid fa-pen-ruler portfolio"></i>
+      <h2 class="m-3 portfolio">PORTFOLIOS</h2>
+    </div>
+    <div class="container-fluid bg-black">
+      <div class="container">
+        <div class="d-flex flex-row w-100">
+          <ul
+            class="m-0 p-0 w-100 students-nav navbar-nav nav important-white d-flex flex-row"
+          >
+            <li
+              class="nav-item d-flex align-items-center justify-content-center hover-portfolio pr-2"
+            >
+              <a href="#ethan" class="nav-link"
+                ><i class="fa-solid fa-caret-right"></i> ETHAN</a
+              >
+            </li>
+            <li class="nav-item hover-portfolio pr-2">
+              <a href="#jeremy" class="nav-link">JEREMY</a>
+            </li>
+            <li class="nav-item hover-portfolio pr-2">
+              <a href="#awa" class="nav-link">AWA</a>
+            </li>
+            <li class="nav-item hover-portfolio pr-2">
+              <a href="#emmanuel" class="nav-link">EMMANUEL</a>
+            </li>
+            <li class="nav-item hover-portfolio pr-2">
+              <a href="#sofyane" class="nav-link">SOFYANE</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container portfolio-container">
+      <h1 class="portfolio-title">
+        <span id="ethan" class="portfolio-title-span"></span>Ethan
+      </h1>
+      <div class="portfolio-box">
+        <div class="portfolio-left-box">
+          <div class="portfolio-img"></div>
+        </div>
+        <div class="portfolio-right-box">
+          <h3 class="portfolio-right-box-title">"bluehost"</h3>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            facere ipsum nesciunt, enim qui iste distinctio repellendus eligendi
+            rerum rem consequuntur adipisci quasi incidunt iusto dolorum,
+            asperiores voluptate. Obcaecati, perspiciatis.
+          </h5>
+          <h6 class="tech">HTML, CSS</h6>
+          <i class="fa-solid fa-link"></i>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <div class="portfolio-left-box">
+          <div class="portfolio-img"></div>
+        </div>
+        <div class="portfolio-right-box">
+          <h3 class="portfolio-right-box-title">"bluehost"</h3>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            facere ipsum nesciunt, enim qui iste distinctio repellendus eligendi
+            rerum rem consequuntur adipisci quasi incidunt iusto dolorum,
+            asperiores voluptate. Obcaecati, perspiciatis.
+          </h5>
+          <h6 class="tech">HTML, CSS</h6>
+          <i class="fa-solid fa-link"></i>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <div class="portfolio-left-box">
+          <div class="portfolio-img"></div>
+        </div>
+        <div class="portfolio-right-box">
+          <h3 class="portfolio-right-box-title">"bluehost"</h3>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            facere ipsum nesciunt, enim qui iste distinctio repellendus eligendi
+            rerum rem consequuntur adipisci quasi incidunt iusto dolorum,
+            asperiores voluptate. Obcaecati, perspiciatis.
+          </h5>
+          <h6 class="tech">HTML, CSS</h6>
+          <i class="fa-solid fa-link"></i>
+        </div>
+      </div>
+      <h1 class="portfolio-title">
+        <span id="jeremy" class="portfolio-title-span"></span>Jeremy
+      </h1>
+      <div class="portfolio-box">
+        <div class="portfolio-left-box">
+          <div class="portfolio-img"></div>
+        </div>
+        <div class="portfolio-right-box">
+          <h3 class="portfolio-right-box-title">"bluehost"</h3>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            facere ipsum nesciunt, enim qui iste distinctio repellendus eligendi
+            rerum rem consequuntur adipisci quasi incidunt iusto dolorum,
+            asperiores voluptate. Obcaecati, perspiciatis.
+          </h5>
+          <h6 class="tech">HTML, CSS</h6>
+          <i class="fa-solid fa-link"></i>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <div class="portfolio-left-box">
+          <div class="portfolio-img"></div>
+        </div>
+        <div class="portfolio-right-box">
+          <h3 class="portfolio-right-box-title">"bluehost"</h3>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            facere ipsum nesciunt, enim qui iste distinctio repellendus eligendi
+            rerum rem consequuntur adipisci quasi incidunt iusto dolorum,
+            asperiores voluptate. Obcaecati, perspiciatis.
+          </h5>
+          <h6 class="tech">HTML, CSS</h6>
+          <i class="fa-solid fa-link"></i>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <div class="portfolio-left-box">
+          <div class="portfolio-img"></div>
+        </div>
+        <div class="portfolio-right-box">
+          <h3 class="portfolio-right-box-title">"bluehost"</h3>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            facere ipsum nesciunt, enim qui iste distinctio repellendus eligendi
+            rerum rem consequuntur adipisci quasi incidunt iusto dolorum,
+            asperiores voluptate. Obcaecati, perspiciatis.
+          </h5>
+          <h6 class="tech">HTML, CSS</h6>
+          <i class="fa-solid fa-link"></i>
+        </div>
+      </div>
+      <h1 class="portfolio-title">
+        <span id="awa" class="portfolio-title-span"></span>AWA
+      </h1>
+      <div class="portfolio-box">
+        <div class="portfolio-left-box">
+          <div class="portfolio-img"></div>
+        </div>
+        <div class="portfolio-right-box">
+          <h3 class="portfolio-right-box-title">"bluehost"</h3>
+          <h5>h2
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            facere ipsum nesciunt, enim qui iste distinctio repellendus eligendi
+            rerum rem consequuntur adipisci quasi incidunt iusto dolorum,
+            asperiores voluptate. Obcaecati, perspiciatis.
+          </h5>
+          <h6 class="tech">HTML, CSS</h6>
+          <i class="fa-solid fa-link"></i>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <div class="portfolio-left-box">
+          <div class="portfolio-img"></div>
+        </div>
+        <div class="portfolio-right-box">
+          <h3 class="portfolio-right-box-title">"bluehost"</h3>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            facere ipsum nesciunt, enim qui iste distinctio repellendus eligendi
+            rerum rem consequuntur adipisci quasi incidunt iusto dolorum,
+            asperiores voluptate. Obcaecati, perspiciatis.
+          </h5>
+          <h6 class="tech">HTML, CSS</h6>
+          <i class="fa-solid fa-link"></i>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <div class="portfolio-left-box">
+          <div class="portfolio-img"></div>
+        </div>
+        <div class="portfolio-right-box">
+          <h3 class="portfolio-right-box-title">"bluehost"</h3>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            facere ipsum nesciunt, enim qui iste distinctio repellendus eligendi
+            rerum rem consequuntur adipisci quasi incidunt iusto dolorum,
+            asperiores voluptate. Obcaecati, perspiciatis.
+          </h5>
+          <h6 class="tech">HTML, CSS</h6>
+          <i class="fa-solid fa-link"></i>
+        </div>
+      </div>
+      <h1 class="portfolio-title">
+        <span id="emmanuel" class="portfolio-title-span"></span>Emmanuel
+      </h1>
+      <div class="portfolio-box">
+        <div class="portfolio-left-box">
+          <div class="portfolio-img"></div>
+        </div>
+        <div class="portfolio-right-box">
+          <h3 class="portfolio-right-box-title">"bluehost"</h3>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            facere ipsum nesciunt, enim qui iste distinctio repellendus eligendi
+            rerum rem consequuntur adipisci quasi incidunt iusto dolorum,
+            asperiores voluptate. Obcaecati, perspiciatis.
+          </h5>
+          <h6 class="tech">HTML, CSS</h6>
+          <i class="fa-solid fa-link"></i>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <div class="portfolio-left-box">
+          <div class="portfolio-img"></div>
+        </div>
+        <div class="portfolio-right-box">
+          <h3 class="portfolio-right-box-title">"bluehost"</h3>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            facere ipsum nesciunt, enim qui iste distinctio repellendus eligendi
+            rerum rem consequuntur adipisci quasi incidunt iusto dolorum,
+            asperiores voluptate. Obcaecati, perspiciatis.
+          </h5>
+          <h6 class="tech">HTML, CSS</h6>
+          <i class="fa-solid fa-link"></i>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <div class="portfolio-left-box">
+          <div class="portfolio-img"></div>
+        </div>
+        <div class="portfolio-right-box">
+          <h3 class="portfolio-right-box-title">"bluehost"</h3>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            facere ipsum nesciunt, enim qui iste distinctio repellendus eligendi
+            rerum rem consequuntur adipisci quasi incidunt iusto dolorum,
+            asperiores voluptate. Obcaecati, perspiciatis.
+          </h5>
+          <h6 class="tech">HTML, CSS</h6>
+          <i class="fa-solid fa-link"></i>
+        </div>
+      </div>
+      <h1 class="portfolio-title">
+        <span id="sofyane" class="portfolio-title-span"></span>SOFYANE
+      </h1>
+      <div class="portfolio-box">
+        <div class="portfolio-left-box">
+          <div class="portfolio-img"></div>
+        </div>
+        <div class="portfolio-right-box">
+          <h3 class="portfolio-right-box-title">"bluehost"</h3>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            facere ipsum nesciunt, enim qui iste distinctio repellendus eligendi
+            rerum rem consequuntur adipisci quasi incidunt iusto dolorum,
+            asperiores voluptate. Obcaecati, perspiciatis.
+          </h5>
+          <h6 class="tech">HTML, CSS</h6>
+          <i class="fa-solid fa-link"></i>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <div class="portfolio-left-box">
+          <div class="portfolio-img"></div>
+        </div>
+        <div class="portfolio-right-box">
+          <h3 class="portfolio-right-box-title">"bluehost"</h3>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            facere ipsum nesciunt, enim qui iste distinctio repellendus eligendi
+            rerum rem consequuntur adipisci quasi incidunt iusto dolorum,
+            asperiores voluptate. Obcaecati, perspiciatis.
+          </h5>
+          <h6 class="tech">HTML, CSS</h6>
+          <i class="fa-solid fa-link"></i>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <div class="portfolio-left-box">
+          <div class="portfolio-img"></div>
+        </div>
+        <div class="portfolio-right-box">
+          <h3 class="portfolio-right-box-title">"bluehost"</h3>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            facere ipsum nesciunt, enim qui iste distinctio repellendus eligendi
+            rerum rem consequuntur adipisci quasi incidunt iusto dolorum,
+            asperiores voluptate. Obcaecati, perspiciatis.
+          </h5>
+          <h6 class="tech">HTML, CSS</h6>
+          <i class="fa-solid fa-link"></i>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <div class="portfolio-left-box">
+          <div class="portfolio-img"></div>
+        </div>
+        <div class="portfolio-right-box">
+          <h3 class="portfolio-right-box-title">"bluehost"</h3>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            facere ipsum nesciunt, enim qui iste distinctio repellendus eligendi
+            rerum rem consequuntur adipisci quasi incidunt iusto dolorum,
+            asperiores voluptate. Obcaecati, perspiciatis.
+          </h5>
+          <h6 class="tech">HTML, CSS</h6>
+          <i class="fa-solid fa-link"></i>
+        </div>
+      </div>
+      <a href="#body"
+        ><span class="go-to-top-btn"
+          ><i class="important-white fa-solid fa-arrow-up"></i></span
+      ></a>
+    </div>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/65c0b5ed23.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <footer>
+      <section class="container">
+        <section class="sectionUnFooter">
+          <div class="logoFooter">
+            <a href="#"><img src="/assets/logo-tagline.svg" alt="#" /></a>
+          </div>
+          <div class="telephoneFooter">
+            <p class="telephoneLien">
+              <a class="important-white" href="tel:+33173125741">0173125741</a>
+            </p>
+          </div>
+        </section>
+
+        <section class="sectionDeuxFooter">
+          <div class="menuFooter">
+            <h3>Sommaire</h3>
+            <a href="index.html"><p>Accueil</p></a>
+            <a href="formations.html"><p>Formations</p></a>
+            <a href="portfolio.html"><p>Portfolios</p></a>
+            <a href="contact.html"><p>Contact</p></a>
+          </div>
+
+          
+
+          <div class="contact">
+            <div class="adress">
+              <h3>Contact</h3>
+              <p>Ifocop Paris11</p>
+              <p>37/39 rue Saint-Sébastien</p>
+              <p>75011 PARIS</p>
+            </div>
+          </div>
+
+          <div class="newsletterFooter">
+            <h3>Inscrivez-vous à notre newsletter</h3>
+            <form action="#" method="post">
+              <div class="nomEtMail">
+                <input
+                  type="name"
+                  id="name"
+                  placeholder="Votre prénom"
+                  autocomplete="off"
+                />
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Votre e-mail"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="inscrire">
+                <input type="submit" value="Subscribe" />
+              </div>
+            </form>
+          </div>
+
+          <div class="mentionsIcones">
+            <div class="iconesReseaux">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </section>
+        <section class="sectionTroisFooter"></section>
+        <div class="mentions">
+          <a href="#"><p class="sansBorder">Mentions légales</p></a>
+          <div class="bordureFooter"></div>
+          <a href="#"><p>Crédits</p></a>
+          <div class="bordureFooter"></div>
+          <a href="#"><p>Politique d'utilisation des cookies</p></a>
+          <div class="bordureFooter"></div>
+          <a href="#"><p>Conditions générales de formation</p></a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

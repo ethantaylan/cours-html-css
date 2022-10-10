@@ -1,0 +1,11 @@
+html, body {
+    min-width: 420px;
+}
+
+
+/* 0 - 420 */
+
+@media screen and (max-width: 420px) {
+}
+
+/* 420 - 768 */ 
