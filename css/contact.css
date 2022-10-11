@@ -1,110 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
-body{
-    margin: 0px;
-    padding: 0px;
-    background-color: #e2fedf;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-form{
-    background-color: rgb(232, 240, 237);
-    padding: 30%;
-    border-radius: 10px;
-}
-
-form h1{
-    font-size: 20px;
-}
-
-form .separation{
+html, body {
     width: 100%;
-    height: 1px;
-    background-color: #74dfa4;
+    height: 100%;
 }
 
-form.corps-formulaire{
-    display:flex;
-    flex-wrap:wrap;
-    margin-bottom: 30px;
-}
-
-form.corps-formulaire .groupe{
-    margin-top: 20px;
+.contact-container {
     display: flex;
-    flex-direction: column;
-}
-
-form .corps-formulaire .gauche .groupe input{
-    margin-top: 5px;
-    padding: 10px 5px 10px 30px;
-    border: 1px solid #3a8001;
-    outline-color: #74dfa4;
-    border-radius: 5px;
-    
-}
-form .corps-formulaire .gauche .groupe i{
-    position: absolute;
-    left: 0;
-    top: 25px;
-    padding: 9px 8px;
-    color: #74dfa4;
-
-}
-
-form .coprs-formualire .droite{
-    margin-left: 40px;
-}
-
-form .corps-formulaire .droite .groupe{
-height: 100%;
-}
-
-form .corps-formulaire .droite .groupe textarea{
-margin-top: 5px;
-padding: 10px;
-background-color: #f8f8f8;
-border: 2px solid #3a8001;
-outline: none;
-border-radius: 5px;
-resize: none;
-height: 72%;
-}
-
-form .pied-formule button{
-    margin-top: 10px;
-    background-color: aquamarine;
-    color: aliceblue;
-    font-size: 15px;
-    border:none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    outline:none;
-    cursor:pointer;
-    transition: transform 0.5s;
-}
-
-form .pied-formule button:hover{
-    transform: scale(1.05);
-}
-
-@media screen and (max-width:920px){
-    form .corps-formulaire .droite{
-        margin-left: 0px;
-    }
-}
-
-.btn-accueil {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-
-.btn-accueil:hover {
-    cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
