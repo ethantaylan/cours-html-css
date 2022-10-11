@@ -1,51 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ifocop DIV G22 | Contact</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="css/contact.css">
-</head>
-<body>
-    <div class="container">
-    <span class="btn-accueil"><a href="index.html">Accueil</a></span>
-    <form>
-        <h1>Contactez-nous iFOCOP PARIS 11EME</h1>
-        <div class="separation"></div>
-        <div class="corps formulaire">
-        <div class="gauche">
-            <div class="boite">
-                <label>Votre Prénom</label>
-                <input type="text">
-                <i class="fas fa-user"></i>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container h-100 d-flex align-items-center justify-content-center">
+        <div class=" contact-container">
+    <section class="mb-4">
+      <h2 class="h1-responsive font-weight-bold text-center my-4">
+        Contactez-nous
+      </h2>
+      <p class="text-center w-responsive mx-auto mb-5">
+        Vous avez une question ? N'hésitez pas à nous contacter directement via notre formulaire !
+      </p>
+      <div class="row">
+        <div class="col-md-9 mb-md-0 mb-5">
+          <form
+            id="contact-form"
+            name="contact-form"
+            action="mail.php"
+            method="POST"
+          >
+            <div class="row">
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-control"
+                  />
+                  <label for="name" class="">Votre nom</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                  />
+                  <label for="email" class="">Votre adresse mail</label>
+                </div>
+              </div>
             </div>
-            <div class="boite"> 
-                <label>Votre Nom</label>
-            <input type="texte">
-            <i class="fas fa-envelope"></i>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    class="form-control"
+                  />
+                  <label for="subject" class="">Objet</label>
+                </div>
+              </div>
             </div>
-            <div class="boite">  
-                <label>Votre Adresse Mail</label>
-            <input type="text">
-            <i class="fas fa-mobile"></i>
-        </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form">
+                  <textarea
+                    type="text"
+                    id="message"
+                    name="message"
+                    rows="2"
+                    class="form-control md-textarea"
+                  ></textarea>
+                  <label for="message">Votre message</label>
+                </div>
+              </div>
+            </div>
+          </form>
 
+          <div class="text-center text-md-left">
+            <a
+              class="btn btn-primary"
+              onclick="document.getElementById('contact-form').submit();"
+              >Send</a
+            >
+          </div>
+          <div class="status"></div>
         </div>
-        
-        <div class="droite">
-            <div class="groupe">
-                <label>Message</label>
-                <textarea placeholder="Saissisez ici..."></textarea>
+        <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <i class="fas fa-map-marker-alt fa-2x"></i>
+              <p>37-39 Rue Saint-Sébastien, 75011 Paris</p>
+            </li>
+
+            <li>
+              <i class="fas fa-phone mt-4 fa-2x"></i>
+              <p>01 40 21 83 78</p>
+            </li>
+          </ul>
         </div>
-        </div>
-        <div class="pied-formulaire">
-        <button>Envoyer le message</button>
-    
-    </div>
-    </form>
+      </div>
+    </section>
 </div>
-</body>
+</div>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+crossorigin="anonymous"
+></script>
+  </body>
 </html>
