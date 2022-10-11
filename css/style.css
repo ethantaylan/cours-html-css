@@ -230,8 +230,6 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60%;
-  width: 65%;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.384);
   text-align: center !important;
@@ -286,4 +284,13 @@ h6 {
   border: none;
   color:white !important;
   padding: 5px 10px 5px 10px;
+}
+
+.dropdown-menu {
+  border-radius: 0px !important;
+  top: 96% !important;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(0, 100, 0, 0.2) !important;
 }
