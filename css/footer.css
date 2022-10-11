@@ -19,9 +19,7 @@ footer {
 .footer-acceuil {
     background-color: rgb(238, 238, 238);
     padding: 20px;
-    bottom: 0px;
     width: 100%;
-    position: absolute;
 }
 
 p {
@@ -223,3 +221,4 @@ p.sansBorder {
     width: 155px;
   }
 }
+

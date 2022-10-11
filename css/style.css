@@ -224,3 +224,66 @@ h6 {
 .left-menu-active {
   background-color: #414141;
 }
+
+
+.accueil-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 65%;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.384);
+  text-align: center !important;
+  padding: 40px;
+
+}
+
+.container-accueil {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/bg2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.logo-ifocop {
+  margin-bottom: 40px;
+
+}
+
+.accueil-section p {
+  margin-bottom: 60px !important;
+  background-color: black;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white !important;
+  font-size: 20px;
+}
+
+
+.accueil-section h2 {
+  font-size: 60px;
+  font-weight: 600;
+  font-family: "Source Sans Pro", sans-serif;
+  color : white !important;
+  margin-bottom: 40px;
+}
+
+.ici {
+  font-size: 40px;
+}
+
+.btn-class {
+  background-color: #1d5141 !important;
+  border-radius: none !important;
+  border: none;
+  color:white !important;
+  padding: 5px 10px 5px 10px;
+}
