@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media-screen.css">
+    <link rel="stylesheet" href="css/media-screen.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/footer.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,74 +26,76 @@
   </head>
 
   <body id="body">
-    <div id="left-menu" class="left-menu">
-      <i onclick="crossClick()" id="cross" class="fa-solid fa-caret-left cross"></i>
-
-      <ul id="left-menu-ul" class="navbar-nav nav">
-        <li id="EthanLeftMenu" onclick="EthanActive()" class="nav-item ff-pro text-white"><a href="#ethan" class="nav-link">ETHAN</a></li>
-        <li id="JeremyLeftMenu" onclick="JeremyActive()" class="nav-item ff-pro text-white"><a href="#jeremy" class="nav-link">JEREMY</a></li>
-        <li id="AwaLeftMenu" onclick="AwaActive()" class="nav-item ff-pro text-white"><a href="#awa" class="nav-link">AWA</a></li>
-        <li id="EmmanuelLeftMenu" onclick="EmmanuelActive()" class="nav-item ff-pro text-white"><a href="#emmanuel" class="nav-link">EMMANUEL</a></li>
-        <li id="SofyaneLeftMenu"  onclick="SofyaneActive()" class="nav-item ff-pro text-white"><a href="#sofyane" class="nav-link">SOFYANE</a></li>
-      </ul>
-    </div>
-    <div class="border-bottom container-fluid dark-green-color font-weight-600">
-      <div class="container">
-        <nav class="p-0 navbar navbar-expand-lg">
-          <div class="d-flex flex-row align-items-center">
-            <a class="navbar-brand m-0 pb-2 pt-2 text-white" href="#"
-              ><img src="assets/logo-ifocop.svg" alt="Logo Ifocop"
-            /></a>
-            <div class="navbar-line"></div>
-            <h6 class="important-green m-0 justify-content-md-start">
-              PROMOTION 22
-            </h6>
-          </div>
-
-          <button
-            class="navbar-toggler important-white"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="material-symbols-outlined"> menu </span>
-          </button>
-          <div
-            class="collapse justify-content-end navbar-collapse"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item" onclick="activeAccueil()" id="AccueilBtn">
-                <a class="nav-link text-white important-hover p-4" href="index.html"
-                  >Accueil</a
-                >
-              </li>
-              <li class="nav-item active"  onclick="activePortfolios()" id="PortfoliosBtn">
-                <a
-                  class="nav-link text-white important-hover p-4"
-                  href="#"
-                  >Portfolios</a
-                >
-              </li>
-              <li class="nav-item" onclick="activeFormations()" id="FormationsBtn">
-                <a class="nav-link text-white important-hover p-4" href="#"
-                  >Formations</a
-                >
-              </li>
-              <li class="nav-item" onclick="activeContactezNous()" id="ContactezNousBtn">
-                <a class="nav-link text-white important-hover p-4" href="contact.html"
-                  >Contactez-nous</a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
+    <header>
+      <div class="border-bottom container-fluid dark-green-color font-weight-600">
+        <div class="container">
+          <nav class="p-0 navbar navbar-expand-lg">
+            <div class="d-flex flex-row align-items-center">
+              <a class="navbar-brand m-0 pb-2 pt-2 text-white" href="#"
+                ><img src="assets/logo-ifocop.svg" alt="Logo Ifocop"
+              /></a>
+              <div class="navbar-line"></div>
+              <h6 class="important-green m-0 justify-content-md-start">
+                PROMOTION 22
+              </h6>
+            </div>
+  
+            <button
+              class="navbar-toggler important-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="material-symbols-outlined"> menu </span>
+            </button>
+            <div
+              class="collapse justify-content-end navbar-collapse"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class=" nav-link text-white important-hover p-4" href="/index.html"
+                    >Accueil</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    id="PortfoliosMainNav"
+                    class="active nav-link text-white important-hover p-4"
+                    href="portfolio.html"
+                    >Portfolios</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown show">
+                    <a class="nav-link text-white important-hover p-4 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Formations
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="/alternance.html">Alternance</a>
+                      <a class="dropdown-item" href="/alternance.html">Centre</a>
+  
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white important-hover p-4"
+                    href="contact.html"
+                    >Contactez-nous</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
-    </div>
-
+    </div>  
+    </header>
     <div class="banner flex-row justify-content-center">
       <i class="fa-solid fa-pen-ruler portfolio"></i>
       <h2 class="m-3 portfolio">PORTFOLIOS</h2>
@@ -107,9 +109,7 @@
             <li
               class="nav-item d-flex align-items-center justify-content-center hover-portfolio pr-2"
             >
-              <a href="#ethan" class="nav-link"
-                ><i class="fa-solid fa-caret-right"></i> ETHAN</a
-              >
+              <a href="#ethan" class="nav-link">ETHAN</a>
             </li>
             <li class="nav-item hover-portfolio pr-2">
               <a href="#jeremy" class="nav-link">JEREMY</a>
@@ -239,8 +239,8 @@
         </div>
         <div class="portfolio-right-box">
           <h3 class="portfolio-right-box-title">"bluehost"</h3>
-          <h5>h2
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          <h5>
+            h2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
             facere ipsum nesciunt, enim qui iste distinctio repellendus eligendi
             rerum rem consequuntur adipisci quasi incidunt iusto dolorum,
             asperiores voluptate. Obcaecati, perspiciatis.
@@ -435,8 +435,6 @@
             <a href="portfolio.html"><p>Portfolios</p></a>
             <a href="contact.html"><p>Contact</p></a>
           </div>
-
-          
 
           <div class="contact">
             <div class="adress">
