@@ -294,3 +294,7 @@ h6 {
 .dropdown-item:hover {
   background-color: rgba(0, 100, 0, 0.2) !important;
 }
+
+.bg-ifocop-green {
+  background-color: #1d5141 !important;
+}

@@ -56,3 +56,38 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+
+.bg-ifocop-green {
+    background-color: #1d5141 !important;
+    color: white !important
+  }
+
+  label {
+    color: rgba(180, 180, 180, 1)
+  }
+
+  html, body {
+    background-color: #1d5141 !important;
+  }
+
+  .btn-ifocop-contact {
+background-color: white !important;    border: 1px solid #1d5141;
+border-radius: 0px !important;
+padding-left: 20px !important;
+padding-right: 20px !important;
+  }
+
+  input {
+    border-radius: 0px !important;
+  }
+
+  textarea {
+    border-radius: 0px !important;
+  }
+
+  .back-arrow {
+    color: white !important;
+    font-size: 40px;
+    padding: 40px 0px 0px 40px;
+    position: absolute !important;
+  }

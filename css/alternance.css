@@ -1,254 +1,192 @@
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    /* background: white; */
-    color: black;
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-
-body{
-    font-family: 'Roboto', sans-serif;
-
+.bg-formation {
+  background-image: url("../assets/formation.png") !important;
 }
 
-.container, .container3{
-    padding: 20px;
+.banner-formation {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.container{
-    padding: 0%;
-    text-align: center;
-    border: 10 solid;
-    background: #1D5141;
+.container-formation {
+  width: 100%;
+  height: 100%;
 }
 
-
-.container2{
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    /* border: 1px solid white; */
-    height: 70vh;
-    background-image:url("/assets/bg_nos_formations.jpg");
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    margin-bottom: 40px;
-   
-    
+.text-shadow {
+  background-color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-h1.formation {
-    font-size: 50px;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: transparent;
-    border: 0;
-    /* border-bottom: 1px solid #999999; */
-    text-align: center;
-    color: white;
-    cursor: pointer;
-    transition: color 0.5s;
-    padding: 0 20px;
-
+.subtitle-banner {
+  margin-top: 40px;
 }
 
-.nav2{
-    display: flex;
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
-    min-width: max-content;
-    padding: 10px;
-    background-color: transparent;
-    border: 0;
-    border-bottom: 2px solid #999999;
-    text-align: center;
-    color: #999999;
-    cursor: pointer;
-    transition: color 1s;
+.box-formation {
+  width: 100%;
+  background-color: white !important;
+  padding: 40px;
 }
 
-.text2 h2{
-    margin: 0px 15px;
-    padding: 0px 0px;
+.box-title {
+  display: flex;
+  flex-direction: row;
+  color: black !important;
+  align-items: center;
 }
 
-.nav1:hover{
-    background: green;
-    color: black ;
-    border-radius: 7px;
-
+.icon-formation {
+  font-size: 25px;
+  margin-right: 20px;
+  background-color: #0a9c11;
+  color: white !important;
+  padding: 20px;
 }
 
-.nav2:hover{
-    background: green;
-    color: black ;
-    border-radius: 7px;
-
+.bg-grey {
+  background-color: rgb(201, 201, 201);
 }
 
-/* .container3{
-        width: 100%;
-        height: 100%;
-        background: white !important;
-        line-height: 1.25;
-} */
-.deuxJours{
-    font-weight: 600;
-    font-size: 21px;
-    padding: 15px;
-    color: white;
-}
-
-
-.text2{
-    
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-}
-
-.text2 p{
-    margin-bottom: 8px;
-
-}
-
-.itineraire{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.itineraire h2{
-    text-align: center;
-}
-
-.descriptionAlternance{
-    flex: 2;
-    margin-left: 15px;
-    
-}
-
-
-.itineraire{
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
-}
-
-i{
-   
-    width: 50px;
-    max-width: 50px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    line-height: 50px;
-    text-align: center;
-    justify-content: center;
-    color: white;
-    background-color: blue;
-    padding-top: 3px;
-}
-
-/* .ecrit{
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
-}
-
-.calender{
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
-    padding-top: 0;
-}
-
-.text4{
-    padding-top: 0;
-    margin-top: 20px;
-
-} */
-
-.date{
-    display: flex;
-    align-items: center;
-    color: blue;
-}
-
-/* .loc{
-    display: block;
-    margin-bottom: 30px;
-    justify-content: center;
-    align-items: center;
-} */
-
-.nav3{
-    font-size: 20px;
-    background-color: green;
-    text-align: center;
-    color: white;
-    cursor: pointer;
-    transition: color 0.5s;
-    padding: 15px 20px;
-    border: none;
-
-}
-
-.h1{
-    margin: 0px;
-    padding: 0px;
-}
-
-.nav4{
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
-    padding-top: 0;
-}
-
-.nav5{
-    font-size: 20px;
-    height: 50px;
-    background-color: green;
-    border: 2px solid green;
-    text-align: center;
-    color: white;
-    cursor: pointer;
-    transition: color 0.5s;
-    padding: 15px 20px;
-    /*flex-direction: row;*/
-    justify-content: space-around;
-    margin: 1px;
-}
-
-/* .loc3{
-    display: block;
-    margin-bottom: 30px;
-    justify-content: center;
-    align-items: center;
-} */
-
-.date{
-    margin-right: 20px;
-}
-
-.date2{
-    display: flex;
-    align-items: center;
-    color: blue;
-}
-
-.dateLieu{
-    display: flex;
-    margin-bottom: 15px;
+.bg-alternance {
+  background-image: url("../assets/bg-centre.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
